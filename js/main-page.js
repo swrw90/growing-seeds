@@ -25,6 +25,33 @@ $(document).ready(function () {
     });
 
     $(".horizontalWrap").append("<div id='buttonLeft'>&lt</div><div id='buttonRight'>&gt</div>");
-    
+    $(".horizontalWrap").css("width", numberOfHorizontalSlides * horizontalWidth);
+    $(".horizontal").css("width", horizontalWidth);
 
+    function moveSlide() {
+        $(".horizontalWrap").animate({ "marginLeft": horizontalWidth * (-currentHorizontalPos) });
+    }
+
+    function changePosition(left) {
+        if (currentHorizontalPos == numberOfHorizontalSlides - 1 && !left) {
+            currentHorizontalPos = 0;
+        }
+        else if (!left) {
+            currentHorizontalPos++;
+        }
+        if(currentHorizontalPos == 0 && left){
+            currentHorizontalPos = numberOfHorizontalSlides - 1;
+        } 
+        else if(left) {
+            currentHorizontalPos--;
+        }
+        moveSlide();
+    }
+
+    $("#buttonLeft").click(function() {
+        changePosition(true);
+    });
+        $("#buttonRight").click(function() {
+        changePosition(false);
+    });
 });
