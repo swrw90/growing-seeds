@@ -13,11 +13,27 @@ nav {
     left: 0;
     margin: 0;
     padding: 0;
+    z-index: 99;
 }
 
 li {
     display: inline;
     padding: 0 20px;
+}
+
+.horizontalWrap {
+    float: left;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal {
+    position: relative;
+    float: left;
+    height: 100%;
 }
 
 .onepage {
@@ -28,6 +44,17 @@ li {
     padding: 0;
 }
 
+#horizontal-slider-one {
+    background-color: #856766;
+}
+
+#horizontal-slider-one {
+    background-color: #786675;
+}
+
+#horizontal-slider-one {
+    background-color: #097576;
+}
 #home {
     background-color: black;
 }
@@ -38,4 +65,26 @@ li {
 
 #contact {
     background-color: lightgray;
+}
+
+#buttonRight {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    padding-top: 25%;
+    right: 12px;
+    cursor: pointer;
+    z-index: 99;
+    float:right;
+}
+
+#buttonLeft {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    padding-top: 25%;
+    left: 12px;
+    cursor: pointer;
+    z-index: 99;
+    float: left;
 }

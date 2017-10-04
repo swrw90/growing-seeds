@@ -2,6 +2,10 @@ $(document).ready(function () {
     let onepage = $(".onepage");
     let root = $("html, body");
 
+    let currentHorizontalPos = 0;
+    let horizontalWidth = $(window).width();
+    let numberOfHorizontalSlides = $(".horizontal").length;
+
     for (i = 0; i < onepage.length; i++) {
         let id = onepage[i].id;
 
@@ -19,4 +23,8 @@ $(document).ready(function () {
         }
 
     });
+
+    $(".horizontalWrap").append("<div id='buttonLeft'>&lt</div><div id='buttonRight'>&gt</div>");
+    
+
 });
