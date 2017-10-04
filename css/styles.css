@@ -48,16 +48,21 @@ li {
     background-color: #856766;
 }
 
-#horizontal-slider-one {
+#horizontal-slider-two {
     background-color: #786675;
 }
 
-#horizontal-slider-one {
+#horizontal-slider-three {
     background-color: #097576;
 }
+
 #home {
-    background-color: black;
+    background-image: url("/css/images/gs-home-bg-img-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
 }
+
 
 #about {
     background-color: gray;
@@ -75,7 +80,7 @@ li {
     right: 12px;
     cursor: pointer;
     z-index: 99;
-    float:right;
+    float: right;
 }
 
 #buttonLeft {
