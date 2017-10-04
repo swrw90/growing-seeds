@@ -9,16 +9,53 @@ body {
 
 nav {
     position: fixed;
-    top: 0;
-    left: 0;
+    width: 100%;
+    top: 2%;
+    /*right: 10%;*/
     margin: 0;
     padding: 0;
     z-index: 99;
 }
 
+.layer {
+    padding-top: 10%;
+    padding-left: 15%;
+    width: 85%;
+    height: 65%;
+}
+
+.box {
+    margin-bottom: 5px;
+    margin-left: 5%;
+    background: white;
+    background: hsla rgba(255, 255, 255, 0.9);
+    width: 90%;
+    height: 100%;
+}
+
+.brand {
+    float: left;
+    color: #584c3e;
+    font-family: Cursive, Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+
 li {
     display: inline;
     padding: 0 20px;
+}
+
+a {
+    color: #584c3e;
+    text-decoration: none;
+    float: right;
+    margin-right: 5%;
+    font-size: 20px;
+}
+
+.fa {
+    color: #584c3e;
 }
 
 .horizontalWrap {
@@ -62,7 +99,6 @@ li {
     background-repeat: no-repeat;
     width: auto;
 }
-
 
 #about {
     background-color: gray;
