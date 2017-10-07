@@ -51,7 +51,7 @@ a {
     text-decoration: none;
     float: right;
     margin-right: 5%;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .fa {
@@ -101,7 +101,10 @@ a {
 }
 
 #about {
-    background-color: gray;
+    background-image: url("/css/images/sunflower.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
 }
 
 #contact {
